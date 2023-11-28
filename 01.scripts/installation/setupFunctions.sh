@@ -22,7 +22,7 @@ init() {
   export SUIF_INSTALL_IMAGE_FILE="${SUIF_INSTALL_IMAGE_FILE:-/path/to/install/product.image.zip}"
   export SUIF_PATCH_AVAILABLE="${SUIF_PATCH_AVAILABLE:-0}"
   ## Framework - Patch
-  export SUIF_PATCH_SUM_BOOTSTRAP_BIN="${SUIF_PATCH_SUM_BOOTSTRAP_BIN:-/tmp/sum-boostrap.bin}"
+  export SUIF_PATCH_SUM_BOOTSTRAP_BIN="${SUIF_PATCH_SUM_BOOTSTRAP_BIN:-/tmp/sum-bootstrap.bin}"
   export SUIF_PATCH_FIXES_IMAGE_FILE="${SUIF_PATCH_FIXES_IMAGE_FILE:-/path/to/install/fixes.image.zip}"
 
   # Section 2 - the caller MAY provide
