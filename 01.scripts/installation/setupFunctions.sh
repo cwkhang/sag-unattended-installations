@@ -126,7 +126,7 @@ bootstrapSum() {
   if [ "${SUIF_SDC_ONLINE_MODE}" -eq 0 ]; then
     bootstrapCmd="${bootstrapCmd} -i ${2}"
     # note: everything is always offline except this, as it is not requiring empower credentials
-    logI "[setupFunctions.sh:bootstrapSum()] - Bootstrapping SUM from ${1} using image ${2} into ${SUM_HOME}..."
+    logI "[setupFunctions.sh:bootstrapSum()] - Bootstrapping SUM from ${1} using image ${2} into ${SUM_HOME}... ${bootstrapCmd}"
   else
     logI "[setupFunctions.sh:bootstrapSum()] - Bootstrapping SUM from ${1} into ${SUM_HOME} using ONLINE mode"
   fi
