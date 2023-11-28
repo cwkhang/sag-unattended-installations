@@ -2,7 +2,7 @@
 
 export SUIF_HOME=${SUIF_HOME:-"/tmp/SUIF_HOME"}
 export SUIF_INSTALL_INSTALL_DIR=${SUIF_INSTALL_INSTALL_DIR:-"/opt/softwareag"}
-export SUIF_SUM_HOME=${SUIF_SUM_HOME:"/tmp/sumv11"}
+export SUIF_SUM_HOME=${SUIF_SUM_HOME:-"/tmp/sumv11"}
 export SUIF_TAG=${SUIF_TAG:-main}
 export SUIF_TEMPLATE=${SUIF_TEMPLATE:-"MSR/1015/lean"}
 
