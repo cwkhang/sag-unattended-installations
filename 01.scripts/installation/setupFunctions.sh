@@ -535,6 +535,7 @@ assureDefaultSumBoostrap() {
     return 1
   fi
   chmod u+x "${lSumBootstrap}"
+  logI "[setupFunctions.sh:assureDefaultSumBoostrap()] - lalalalala! ${lSumBootstrap}"
 }
 
 # TODO: generalize
