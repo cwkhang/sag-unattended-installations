@@ -779,6 +779,7 @@ generateProductsImageFromTemplate() {
 checkSetupTemplateBasicPrerequisites() {
 
   errCount=0
+  chmod u+x "${lSumBootstrap}"
 
   if [ -z "${SUIF_INSTALL_INSTALLER_BIN+x}" ]; then
     logE "[setupFunctions.sh:checkSetupTemplateBasicPrerequisites()] - Variable SUIF_INSTALL_INSTALLER_BIN was not set!"
