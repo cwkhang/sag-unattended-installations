@@ -122,7 +122,7 @@ bootstrapSum() {
   local d
   d=$(date +%y-%m-%dT%H.%M.%S_%3N)
 
-  local bootstrapCmd="${1} --accept-license -d ${SUM_HOME}"
+  local bootstrapCmd="${1} --accept-license -d "'"'"${SUM_HOME}"'"'
   if [ "${SUIF_SDC_ONLINE_MODE}" -eq 0 ]; then
     bootstrapCmd="sh ${bootstrapCmd} -i ${2}"
     # note: everything is always offline except this, as it is not requiring empower credentials
