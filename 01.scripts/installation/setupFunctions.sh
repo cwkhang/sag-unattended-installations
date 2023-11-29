@@ -124,9 +124,9 @@ bootstrapSum() {
 
   local bootstrapCmd="${1} --accept-license -d "'"'"${SUM_HOME}"'"'
   if [ "${SUIF_SDC_ONLINE_MODE}" -eq 0 ]; then
-    bootstrapCmd="sh ${bootstrapCmd} -i ${2}"
+    bootstrapCmd="${bootstrapCmd} -i ${2}"
     # note: everything is always offline except this, as it is not requiring empower credentials
-    logI "[setupFunctions.sh:bootstrapSum()] - Bootstrapping SUM from ${1} using image ${2} into ${SUM_HOME}... ${bootstrapCmd}"
+    logI "[setupFunctions.sh:bootstrapSum()] - Bootstrapping SUM from ${1} using image ${2} into ${SUM_HOME}..."
   else
     logI "[setupFunctions.sh:bootstrapSum()] - Bootstrapping SUM from ${1} into ${SUM_HOME} using ONLINE mode"
   fi
@@ -816,7 +816,7 @@ checkSetupTemplateBasicPrerequisites() {
 
     if [ ! -x "${SUIF_PATCH_SUM_BOOTSTRAP_BIN}" ]; then
       logE "[setupFunctions.sh:checkSetupTemplateBasicPrerequisites()] - Declared variable SUIF_PATCH_SUM_BOOTSTRAP_BIN=${SUIF_PATCH_SUM_BOOTSTRAP_BIN} does not point to a valid executable file."
-     # errCount=$((errCount+1))
+      errCount=$((errCount+1))
       #return 22
     fi
 
