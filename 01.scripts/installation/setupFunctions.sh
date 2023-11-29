@@ -813,7 +813,7 @@ checkSetupTemplateBasicPrerequisites() {
       errCount=$((errCount+1))
       #return 21
     fi
-    #chmod u+x "${SUIF_PATCH_SUM_BOOTSTRAP_BIN}"
+    chmod u+x "${SUIF_PATCH_SUM_BOOTSTRAP_BIN}"
     if [ ! -x "${SUIF_PATCH_SUM_BOOTSTRAP_BIN}" ]; then
       logE "[setupFunctions.sh:checkSetupTemplateBasicPrerequisites()] - Declared variable SUIF_PATCH_SUM_BOOTSTRAP_BIN=${SUIF_PATCH_SUM_BOOTSTRAP_BIN} does not point to a valid executable file."
       errCount=$((errCount+1))
